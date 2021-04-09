@@ -151,6 +151,31 @@ body{
     font-weight: normal;
 }
 
+.block_surnameNP .specialization{
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+
+.block_surnameNP .surname._active,
+.block_surnameNP .name._active,
+.block_surnameNP .specialization._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+._anim-show{
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .block_photo{
     border: #333333 solid 2px;
     height: 125px;
@@ -273,7 +298,7 @@ body{
 
 .skills_list ul{
     list-style: none;
-    margin: 0;
+    margin-left: -15px;
     padding: 0 30px;
 }
 
@@ -285,21 +310,54 @@ body{
 }
 
 .bar{
-        height: 3px;
+    height: 3px;
     width: 45%;
     display: block;
-    left: 34%;
+    left: 32.5%;
     align-self: center;
     margin: 0 auto;
     text-align: center;
     position: absolute;
     justify-content: center;
     justify-items: center;
-    background-color: #424D58;
+    background-color: #333c;
+    border: #333c solid 1px;
 }
 
-.c_sharp{
+.bar:before{
+    content: "";
+    background-color: #FFFDFF;
+    box-shadow: #b7b6be 0 0 5px;
+    height: 3px;
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: width 0.8s ease-out 0.3s;
+}
 
+.c_sharp._active:before{
+    width: 65%;
+}
+
+.js._active:before{
+    width: 45%;
+}
+
+.sql._active:before{
+    width: 75%;
+}
+
+.jQuery._active:before{
+    width: 50%;
+}
+
+.html._active:before{
+    width: 85%;
+}
+
+.css._active:before{
+    width: 70%;
 }
 
 .section-portfolio{
