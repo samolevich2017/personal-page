@@ -1,0 +1,321 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica;
+}
+
+.wrapper{
+    height: 100%;
+    background: url("../images/mountain.jpg") round;
+    background-size: contain;
+}
+
+.container{
+    width: 920px;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    box-shadow: #333c 0 0 10px;
+    height: 100%;
+    position: relative;
+    background: transparent;
+    z-index: 3;
+}
+
+.trees{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../images/background.jpg") 100% no-repeat;
+    background-size: cover; /* Масштабируем фон */
+}
+
+.contacts{
+    position: absolute;
+    color: #b7b6be;
+    bottom: 0;
+    left: 2%;
+}
+
+.contacts h3{
+    text-transform: uppercase;
+}
+
+.contacts ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contacts ul>li{
+    line-height: 25px;
+}
+
+.contacts ul li>a{
+    color: #b7b6be;
+    text-decoration: none;
+}
+
+.contacts ul li>a:hover{
+    color: #ffff;
+}
+
+.contacts-social-icons{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.contacts-social-icons .icon{
+    position: relative;
+    height: 45px;
+    width: 45px;
+}
+
+.icon{
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.icon:hover{
+    box-shadow: #424D58 0 0 10px;
+}
+
+.contacts-social-icons .icon > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 230px 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 620px;
+    max-width: 620px;
+    z-index: 10;
+    background: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: #333;
+}
+
+.content{
+    position: relative;
+    display: grid;
+    z-index: 15;
+}
+
+.header{
+    display: flex;
+    max-height: 230px;
+    height: 230px;
+    position: relative;
+    background:linear-gradient(30deg, transparent 17px, #FFFDFF 0);
+    padding-left: 70px;
+}
+
+.header:after{
+    content: "";
+    width: 80%;
+    border-bottom: #333 solid 2px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.header h3{
+    text-transform: uppercase;
+}
+
+.block_surnameNP{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.block_surnameNP .name{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.block_surnameNP .surname{
+    font-size: 34px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.block_photo{
+    border: #333333 solid 2px;
+    height: 125px;
+    width: 125px;
+    margin: 30px;
+    position: absolute;
+    right: 30px;
+    padding: 0;
+}
+
+.block_photo img{
+    width: 101%;
+    height: 101%;
+    margin: 0;
+}
+
+.section{
+    position: relative;
+    padding-left: 70px;
+    padding-right: 30px;
+    min-height: 200px;
+}
+
+.section-title{
+    text-transform: uppercase;
+}
+
+.section-content{
+    margin-top: -30px;
+    padding-bottom: 30px;
+}
+
+.section-about{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 150px;
+    background:linear-gradient(150deg, transparent 17px, #FFFDFF 0) top left,
+            linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.section-experience{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background:linear-gradient(150deg, transparent 17px, #FFFDFF 0) top left,
+    linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.section-education{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background:linear-gradient(150deg, transparent 17px, #FFFDFF 0) top left,
+    linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title_edPlace{
+    text-align: left;
+    border: #383838d1 solid 1px;
+    position: absolute;
+    width: 80%;
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.title_edPlace .title{
+    float: left;
+    margin:0;
+}
+
+.year-education{
+    font-weight: normal;
+    float: right;
+    right: 0;
+    top: 0;
+    color: #383838d1;
+}
+
+.about-education{
+    float: left;
+    margin-top: 10px;
+}
+
+.diploma-education{
+    float: left;
+    text-decoration: none;
+    color: rgb(51, 137, 225);
+    position: relative;
+}
+
+.diploma-education:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(51, 137, 225);
+    transition: width 0.2s ease-out;
+}
+
+.diploma-education:hover:after,
+.diploma-education:active:after{
+    width: 100%;
+}
+
+.section-skills{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background:linear-gradient(150deg, transparent 17px, #FFFDFF 0) top left,
+    linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.skills_list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.skill-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 25px;
+}
+
+.bar{
+    height: 3px;
+    width: 50%;
+    display: block;
+    align-self: center;
+    background-color: #424D58;
+}
+
+.c_sharp{
+
+}
+
+.section-portfolio{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background:linear-gradient(150deg, transparent 17px, #FFFDFF 0);
+}
+
+/* Стилизация скроллбара */
+.main::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Стилизация области за индикатором прокрутки */
+.main::-webkit-scrollbar-track {
+    background: rgba(146, 138, 150, 0.65);;
+}
+
+/* Стилизация индикатора прокрутки */
+.main::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 1%;
+    background-color: rgba(67, 67, 67, 0.87);
+    border-radius: 5px;
+}
