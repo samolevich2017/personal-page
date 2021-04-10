@@ -1,0 +1,116 @@
+body{
+    overflow: hidden;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup_content{
+    transform: perspective(600px) translate(0px, -0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.popup_content{
+    background-color: #FFFDFF;
+    color: #333;
+    max-width: 800px;
+    width: 640px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    height: 480px;
+}
+
+.popup_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup_title{
+    font-size: 32px;
+    margin: 0px 0px 1em 0px;
+}
+
+.block_image_diploma{
+    position: relative;
+    width: 320px;
+    height: 220px;
+    box-shadow: #333c 0 0 10px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.block_image_diploma img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#about_diploma{
+    position: relative;
+}
+
+#about_diploma:before{
+    content: "";
+    position: absolute;
+    width: 42%;
+    height: 2px;
+    background-color: #333333;
+    bottom: -2px;
+}
+
+#mark_diploma{
+    color: rgb(29 201 58);
+}
+
+.characteristic_diploma{
+    margin: 0 0 10px 0;
+}
+
+.list_technologies ul{
+    margin-top: 0;
+    list-style-position: inside;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+    list-style-type: circle;
+    height: 200px;
+    color: darkslateblue;
+}
+
+.list_technologies ul>li{
+    margin-bottom: 3px;
+}

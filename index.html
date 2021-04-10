@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Резюме | Самолевич Иван</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylePopup.css">
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -66,7 +67,7 @@
                             <h4 class="title">Компьютерная академия &laquo;ШАГ&raquo;</h4>
                             <span class="year-education">2018 &ndash; 2021</span>
                             <p class="about-education">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, assumenda!</p>
-                            <a class="diploma-education" href="#">Посмотреть диплом</a>
+                            <a class="diploma-education" href="#" id="diploma_step">Посмотреть диплом</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +95,37 @@
         </div>
     </div>
 </div>
+<div class="popup" id="popup_diploma">
+    <div class="popup_body">
+        <div class="popup_content">
+            <div class="popup_title">Диплом академии &laquo;ШАГ&raquo;</div>
+            <a href="#" class="popup_close close-popup">X</a>
+            <div class="block_image_diploma">
+                <img src="https://www.vmcdn.ca/f/files/halifaxtoday/images/other/051220-found-stamp-found-sign-adobestock_112340373.jpeg" alt="Фото диплома">
+            </div>
+            <h2 id="about_diploma">О дипломном проекте</h2>
+            <h3 class="characteristic_diploma">Тема проекта: <i>&laquo;Спроектировать веб-приложение для автоматизации учета книг в библиотеке&raquo;</i></h3>
+            <h3 class="characteristic_diploma">Оценка: <b id="mark_diploma">&laquo;10&raquo;</b></h3>
+            <h3 class="characteristic_diploma">Проект: <a class="diploma-education" href="http://samolevich-diploma.xyz" target="_blank" style="float: right"><i>samolevich-diploma.xyz</i></h3></a>
+            <br/>
+            <h3 class="characteristic_diploma">Платформа: <i style="color: #5a36c5db;">ASP.NET Core 3.1</i></h3>
+            <div class="list_technologies">
+                <h3 class="characteristic_diploma">Используемые технологии:</h3>
+                <ul>
+                    <li class="tech-item">C#</li>
+                    <li class="tech-item">JavaScript & jQuery</li>
+                    <li class="tech-item">SQL</li>
+                    <li class="tech-item">Entity Framework 6</li>
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">CSS3</li>
+                    <li class="tech-item">AJAX</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>

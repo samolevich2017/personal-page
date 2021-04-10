@@ -38,3 +38,9 @@ if(animItems.length > 0){
 
     setTimeout(()=>{ animOnScroll(); }, 300);
 }
+
+let showDiploma = document.getElementById('diploma_step');
+
+showDiploma.addEventListener('click', function (e) {
+    popupOpen(popupDiploma);
+});
