@@ -108,7 +108,6 @@ body{
     column-count: 2;
     list-style-type: circle;
     height: 200px;
-    color: darkslateblue;
 }
 
 .list_technologies ul>li{
