@@ -264,6 +264,8 @@ body{
     margin-top: 10px;
 }
 
+.github_link,
+.portfolio-card a,
 .diploma-education{
     float: left;
     text-decoration: none;
@@ -271,6 +273,8 @@ body{
     position: relative;
 }
 
+.github_link:after,
+.portfolio-card a:after,
 .diploma-education:after{
     content: "";
     display: block;
@@ -282,6 +286,10 @@ body{
     transition: width 0.2s ease-out;
 }
 
+.github_link:hover:after,
+.github_link:active:after,
+.portfolio-card a:hover:after,
+.portfolio-card a:active:after,
 .diploma-education:hover:after,
 .diploma-education:active:after{
     width: 100%;
@@ -294,6 +302,11 @@ body{
     linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
     background-size: 100% 50%;
     background-repeat: no-repeat;
+}
+
+.section-portfolio{
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 .skills_list ul{
@@ -367,19 +380,133 @@ body{
 }
 
 /* Стилизация скроллбара */
+.block_about_project::-webkit-scrollbar,
 .main::-webkit-scrollbar {
     width: 5px;
 }
 
 /* Стилизация области за индикатором прокрутки */
+.block_about_project::-webkit-scrollbar-track,
 .main::-webkit-scrollbar-track {
     background: rgba(146, 138, 150, 0.65);;
 }
 
 /* Стилизация индикатора прокрутки */
+.block_about_project::-webkit-scrollbar-thumb,
 .main::-webkit-scrollbar-thumb {
     width: 5px;
     height: 1%;
     background-color: rgba(67, 67, 67, 0.87);
     border-radius: 5px;
+}
+
+.portfolio{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: -5%;
+}
+
+.portfolio-card{
+    position: relative;
+    max-width: 200px;
+    width: 200px;
+    max-height: 260px;
+    height: 260px;
+    border-radius: 5px;
+    box-shadow: #333333 0 0 10px;
+    margin: 15px;
+    padding: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.portfolio-card .card-image{
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 101%;
+    height: 50%;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.card-title{
+    padding: 0 5px;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.card-title h3{
+    margin: 5px 3px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;     /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    height: 40px;
+}
+
+.card-title:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: cornflowerblue;
+    height: 2px;
+    width: 15%;
+}
+
+.portfolio-card a{
+    text-transform: uppercase;
+    float: none;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.card-description {
+    max-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+.card-description p{
+    margin: 0;
+    font-size: 14px;
+    max-height: 40px;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;     /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.tag-categories-project{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    min-width: 35px;
+    height: 20px;
+    line-height: 20px;
+    background-color: rgb(58, 155, 255);
+    border: #FFFDFF solid 2px;
+    border-radius: 25px;
+    box-shadow: rgba(29, 122, 183, 0.8) 0 0 10px;
+    color: #FFFDFF;
+    padding: 2px 3px;
 }

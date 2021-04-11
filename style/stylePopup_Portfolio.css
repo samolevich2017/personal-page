@@ -1,0 +1,43 @@
+.block_about_project{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 85%;
+}
+
+.block_about_project h3{
+    margin-top: 10px;
+}
+
+.block_images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    margin-bottom: 25px;
+}
+
+.block_images img{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+}
+
+.block_github{
+
+}
+
+.github_link{
+    float: none;
+}
+
+.block_category{
+
+}
+
+.block_usedTechnologies{
+
+}
+
+.block_description{
+
+}

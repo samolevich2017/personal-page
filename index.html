@@ -5,6 +5,7 @@
     <title>Резюме | Самолевич Иван</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/stylePopup.css">
+    <link rel="stylesheet" href="style/stylePopup_Portfolio.css">
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -89,6 +90,60 @@
                 <div class="section-portfolio section">
                     <div class="section-content">
                         <h3 class="section-title">Портфолио</h3>
+                        <div class="portfolio">
+                            <div id="portfolio_1" class="portfolio-card">
+                                <div class="card-image">
+                                    <img src="images/portfolio/Процессы(1_WF).JPG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <h3>Управление процессами (WF)</h3>
+                                </div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, posddsdssdddsdssddsdssddsdsddssddsdsdsdssdssimus.</p>
+                                </div>
+                                <a href="#" class="portfolio-detail">Подробнее</a>
+                                <div class="tag-categories-project">C#</div>
+                            </div>
+                            <div id="portfolio_2" class="portfolio-card">
+                                <div class="card-image">
+                                    <img src="images/portfolio/СТО(1_WPF).JPG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <h3>Курс. проект Техобслуживание (WPF)</h3>
+                                </div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, posddsdssdddsdssddsdssddsdsddssddsdsdsdssdssimus.</p>
+                                </div>
+                                <a href="#" class="portfolio-detail">Подробнее</a>
+                                <div class="tag-categories-project">C#</div>
+                            </div>
+                            <div id="portfolio_3" class="portfolio-card">
+                                <div class="card-image">
+                                    <img src="images/portfolio/Прицел%20для%20игр(1_WF).JPG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <h3>Прицел для шутеров (WF)</h3>
+                                </div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, posddsdssdddsdssddsdssddsdsddssddsdsdsdssdssimus.</p>
+                                </div>
+                                <a href="#" class="portfolio-detail">Подробнее</a>
+                                <div class="tag-categories-project">C#</div>
+                            </div>
+                            <div id="portfolio_4" class="portfolio-card">
+                                <div class="card-image">
+                                    <img src="images/portfolio/Телефонная%20книга(1_WF).JPG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <h3>Телефонная книга (WF)</h3>
+                                </div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, posddsdssdddsdssddsdssddsdsddssddsdsdsdssdssimus.</p>
+                                </div>
+                                <a href="#" class="portfolio-detail">Подробнее</a>
+                                <div class="tag-categories-project">C#</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,19 +163,44 @@
             <h3 class="characteristic_diploma">Оценка: <b id="mark_diploma">&laquo;10&raquo;</b></h3>
             <h3 class="characteristic_diploma">Проект: <a class="diploma-education" href="http://samolevich-diploma.xyz" target="_blank" style="float: right"><i>samolevich-diploma.xyz</i></h3></a>
             <br/>
-            <h3 class="characteristic_diploma">Платформа: <i>ASP.NET Core 3.1</i></h3>
+            <h3 class="characteristic_diploma">Платформа: <i style="color: #333333;">ASP.NET Core 3.1</i></h3>
             <div class="list_technologies">
                 <h3 class="characteristic_diploma">Используемые технологии:</h3>
                 <ul>
                     <li class="tech-item">C#</li>
-                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">JavaScript & jQuery</li>
                     <li class="tech-item">SQL</li>
                     <li class="tech-item">Entity Framework 6</li>
                     <li class="tech-item">HTML5</li>
                     <li class="tech-item">CSS3</li>
                     <li class="tech-item">AJAX</li>
-                    <li class="tech-item">jQuery</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup_portfolio1">
+    <div class="popup_body">
+        <div class="popup_content">
+            <div class="popup_title">Управление процессами (WF)</div>
+            <a href="#" class="popup_close close-popup">X</a>
+            <div class="block_about_project">
+                <div class="block_images">
+                    <img src="images/portfolio/Процессы(1_WF).JPG" alt="">
+                </div>
+                <div class="block_github">
+                    <h3>GitHub Repository: <a href="#" class="github_link" target="_blank"><i>process-managed</i></a></h3>
+                </div>
+                <div class="block_category">
+                    <h3>Категория: <i>Системное программирование</i></h3>
+                </div>
+                <div class="block_usedTechnologies">
+                    <h3>Используемые технологии: <i>C# .NET</i></h3>
+                </div>
+                <div class="block_description">
+                    <h3>Описание</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda aut, deserunt dolorum expedita fugit hic iste laborum libero molestias nostrum placeat, quo quod ratione repudiandae sed similique ut, velit! Et magni reprehenderit saepe ut!</p>
+                </div>
             </div>
         </div>
     </div>
@@ -128,5 +208,6 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/popup.js"></script>
+<script src="js/portfolio_popups.js"></script>
 </body>
 </html>
