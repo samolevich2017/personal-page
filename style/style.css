@@ -68,14 +68,17 @@ body{
 
 .contacts-social-icons{
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    flex: 0 0 15px;
     justify-content: center;
+    margin-left: -10px;
 }
 
 .contacts-social-icons .icon{
     position: relative;
     height: 45px;
     width: 45px;
+    margin: 10px;
 }
 
 

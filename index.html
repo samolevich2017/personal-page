@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/stylePopup.css">
     <link rel="stylesheet" href="style/stylePopup_Portfolio.css">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="wrapper">
@@ -21,15 +21,24 @@
                     <li>Адрес: Украина, г.Харцызск</li>
                 </ul>
                 <div class="contacts-social-icons">
-                    <!-- <div class="vk-icon icon">
-                        <img src="images/vk.png" alt="vk">
+                    <div class="github-icon icon">
+                        <a class="contact-link" href="https://github.com/samolevich2017" target="_blank">
+                            <img src="images/github.png" alt="github">
+                        </a>
                     </div>
-                    <div class="inst-icon icon">
-                        <img src="images/inst.png" height="50px" width="50px" alt="inst">
-                    </div> -->
                     <div class="telegram-icon icon">
                         <a class="contact-link" href="https://t.me/samolevich_ivan" target="_blank">
                             <img src="images/telegram.png" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="vk-icon icon">
+                        <a class="contact-link" href="https://vk.com/ivan_samolevich" target="_blank">
+                            <img src="images/vk.png" alt="vk">
+                        </a>
+                    </div>
+                    <div class="instagram-icon icon">
+                        <a class="contact-link" href="https://www.instagram.com/samolevichivan/" target="_blank">
+                            <img src="images/instagram.png" alt="instagram">
                         </a>
                     </div>
                 </div>
@@ -192,7 +201,14 @@
             <a href="#" class="popup_close close-popup">X</a>
             <div class="block_about_project">
                 <div class="block_images">
-                    <img src="images/portfolio/Процессы(1_WF).JPG" alt="">
+                    <div class="images-item">
+                        <img src="images/portfolio/Процессы(1_WF).JPG" alt="">
+                    </div>
+                    <div class="images-item">
+                        <img src="images/portfolio/СТО(1_WPF).JPG" alt="">
+                    </div>
+                    <a href="#" class="btnLeft" onclick="previousSlide()">&#10094;</a>
+                    <a href="#" class="btnRight" onclick="nextSlide()">&#10095;</a>
                 </div>
                 <div class="block_github">
                     <h3>GitHub Repository: <a href="#" class="github_link" target="_blank"><i>process-managed</i></a></h3>

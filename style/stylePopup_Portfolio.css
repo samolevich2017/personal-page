@@ -13,12 +13,54 @@
     display: flex;
     justify-content: center;
     height: 280px;
+    max-height: 280px;
     margin-bottom: 25px;
 }
 
-.block_images img{
+.btnLeft,
+.btnRight{
     position: absolute;
-    width: 80%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(75, 75, 75, 0.59);
+    color: #FFFDFF;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 15px;
+}
+
+.btnLeft:hover,
+.btnRight:hover{
+    background-color: rgba(75, 75, 75);
+}
+
+.btnLeft{
+    left: 0;
+}
+
+.btnRight{
+    right: 0;
+}
+
+/* Анимация слайдов */
+.block_images .images-item {
+    position: absolute;
+    height: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.images-item img{
+    object-fit: cover;
     height: 100%;
 }
 
@@ -40,4 +82,16 @@
 
 .block_description{
 
+}
+
+.slider{
+    border: #000 solid 2px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.slider-line{
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease;
 }
