@@ -37,6 +37,60 @@ body{
     background-size: cover; /* Масштабируем фон */
 }
 
+.button__container {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 3.7%;
+    padding: 15px;
+}
+
+.btn {
+    font-family: ui-serif;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(39,42,47,1) 0%, rgba(66,77,88,1) 100%);
+    color: rgba(255, 255, 255, 0.78);
+    outline: 0;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.btn-press {
+    position: relative; 
+    top: 0;
+    box-shadow: 0 6px rgb(75 75 75 / 59%);
+    transition: 0.05s !important;
+    
+
+}
+
+.btn-press*{
+}
+
+
+.btn-press:hover {
+    top: 3px;
+    box-shadow: 0 3px rgb(66 77 88);    
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-press:active {
+    top: 6px;
+    box-shadow: 0 0 rgb(51 137 225);
+}
+
+.link-downloadCV{
+    
+}
+
 .contacts{
     position: absolute;
     color: #b7b6be;
