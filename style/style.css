@@ -8,7 +8,7 @@ body{
 
 .wrapper{
     height: 100%;
-    background: url("../images/mountain.jpg") round;
+    background: url("../images/mountain-min.jpg") round;
     background-size: contain;
 }
 
@@ -33,7 +33,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url("../images/background.jpg") 100% no-repeat;
+    background: url("../images/background-min.jpg") 100% no-repeat;
     background-size: cover; /* Масштабируем фон */
 }
 
@@ -96,6 +96,10 @@ body{
     color: #b7b6be;
     bottom: 0;
     left: 2%;
+}
+
+.footer-contacts{
+    display: none;
 }
 
 .contacts h3{
@@ -780,4 +784,262 @@ body{
     .block_description{
         font-size: 18px;
     }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 100%;
+        max-width: initial;
+    }
+
+    .main{
+        width: 660px;
+        max-width: 660px;
+    }
+
+    .button__container{
+        left: 6%;
+    }
+
+    .contacts{
+        left: 4%;
+    }
+}
+
+@media (max-width: 990px){
+
+    .header,
+    .section{
+        background-color: #FFFDFF;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .main{
+        width: 100%;
+        max-width: initial;
+        grid-column-start: 1;
+    }
+
+    .footer{
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .trees{
+        display: none;
+    }
+
+    .footer-contacts{
+        display: block;
+        color: #333;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        margin-bottom: 25px;
+    }
+
+    .contacts-social-icons{
+        margin-left: -100px;
+    }
+
+    .footer-contacts h3{
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-contacts ul li>a{
+        color: rgb(51, 137, 225);
+    }
+    
+    .button__container{
+        position: relative;
+        padding: 0;
+        left: 0;
+    }
+
+    .btn{
+        padding: 6px 14px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .main{
+        grid-template-rows: 200px 1fr 1fr;
+    }
+
+    .header{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    .header .block_photo{
+        margin-left: 5px;
+        position: relative;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+
+    .header .surname,
+    .header .name{
+        font-size: 32px;
+    }
+
+    .header .specialization{
+        font-size: 18px;
+    }
+
+    .block_surnameNP{
+        margin-right: 80px;
+    }
+
+}
+
+@media (max-width: 580px){
+
+    .portfolio{
+        margin-left: 0;
+    }
+
+    .header .block_photo {
+        margin-left: 5px;
+        position: absolute;
+        border-radius: 100%;
+        overflow: hidden;
+        right: 0;
+        top: -10px;
+        object-fit: cover;
+        width: 90px;
+        height: 90px;
+        border: none;
+    }
+
+    .block_photo img {
+        width: 101%;
+        height: 101%;
+        margin: 0;
+        border-radius: 100%;
+        left: 0;
+        padding: -15px;
+    }
+
+    .block_surnameNP{
+        margin-right: 0;
+    }
+
+    .section,
+    .header{
+        padding-left: 35px;
+    }
+
+    .title_edPlace{
+        left: 50px;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .title_edPlace span{
+        float: none;
+        margin-left: 5px;
+    }
+
+    .title_edPlace{
+        left: 35px;
+    }
+
+    .section-education{
+        padding-bottom: 35px;
+    }
+
+    .section-skills{
+        padding: 0;
+    }
+
+    .section-skills .section-title{
+        margin-left: 35px;
+    }
+
+    .skills_list{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .skills_list ul{
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .section-skills{
+        padding-left: 0;
+    }
+
+
+}
+
+@media (max-width: 425px){
+    .header .block_photo {
+        right: -10px;
+    }
+
+    .skills_list ul{
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .section-skills{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .section-education{
+        padding-bottom: 45px;
+    }
+
+    .header{
+        height: 180px;
+    }
+
+    .section,
+    .header{
+        padding-left: 30px;
+    }
+
+    .header .surname,
+    .header .name{
+        font-size: 26px;
+    }
+
+    .header .specialization{
+        font-size: 16px;
+    }
+
+    .main{
+        grid-template-rows: 180px 1fr 1fr;
+    }
+
+    .header .block_photo {
+        width: 75px;
+        height: 75px;
+        right: -5px;
+    }
+
+    .skills_list ul{
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .section-skills{
+        padding-left: 0;
+    }
+    
 }
