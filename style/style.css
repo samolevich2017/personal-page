@@ -762,6 +762,10 @@ body{
         height: 280px;
     }
 
+    .block_image_diploma img{
+        object-fit: cover;
+    }
+
     #about_diploma{
         font-size: 26px;
     }
@@ -803,6 +807,8 @@ body{
     .contacts{
         left: 4%;
     }
+
+
 }
 
 @media (max-width: 990px){
@@ -864,6 +870,54 @@ body{
         padding: 6px 14px;
         font-size: 18px;
     }
+}
+
+@media (max-width: 720px){
+    #popup_diploma .popup_content{
+        width: 560px;
+        height: 680px;
+        margin-top: 60px;
+    }
+
+    #popup_diploma .popup_title{
+        font-size: 38px;
+    }
+
+    #popup_diploma .popup_close{
+        right: 15px;
+        top: 15px;
+        font-size: 25px;
+    }
+
+    #popup_diploma .block_image_diploma{
+        width: 420px;
+        height: 260px;
+        float: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about_diploma{
+        font-size: 24px;
+    }
+
+    #about_diploma:before{
+        width: 50% !important;
+    }
+
+    #popup_diploma .characteristic_diploma{
+        font-size: 18px;
+    }
+
+    #popup_diploma .characteristic_diploma .diploma-education{
+        position: absolute;
+        margin-left: 5px;
+    }
+
+    #br_diploma{
+        display: none;
+    }
+
 }
 
 @media (max-width: 590px) {
@@ -942,9 +996,76 @@ body{
     }
 
 
+    #popup_diploma .popup_content{
+        width: 330px;
+        height: 680px;
+        margin-top: 60px;
+    }
+
+    #popup_diploma .popup_title{
+        font-size: 26px;
+    }
+
+    #popup_diploma .popup_close{
+        right: 10px;
+        top: 10px;
+        font-size: 22px;
+    }
+
+    #popup_diploma .block_image_diploma{
+        width: 350px;
+        height: 220px;
+    }
+
+    #about_diploma{
+        font-size: 22px;
+    }
+
+    #about_diploma:before{
+        width: -webkit-fill-available !important;
+    }
+
+    #popup_diploma .characteristic_diploma{
+        font-size: 17px;
+    }
+
+    #br_diploma{
+        display: none;
+    }
+
+    #popup_diploma .list_technologies ul{
+        -webkit-column-count: 1;
+    }
+
+}
+
+@media (max-width: 390px){
+    #popup_diploma .popup_content{
+        width: 290px;
+        height: 695px;
+        margin-top: 60px;
+    }
+
+    #popup_diploma .popup_title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #popup_diploma .popup_close{
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+
+    #popup_diploma .block_image_diploma{
+        width: 320px;
+        height: 210px;
+    }
+
 }
 
 @media (max-width: 440px) {
+
     .title_edPlace span{
         float: none;
         margin-left: 5px;
@@ -1000,6 +1121,7 @@ body{
 }
 
 @media (max-width: 320px){
+
     .section-education{
         padding-bottom: 45px;
     }
@@ -1039,6 +1161,27 @@ body{
 
     .section-skills{
         padding-left: 0;
+    }
+
+    #popup_diploma .popup_content{
+        width: 250px;
+        height: 695px;
+        margin-top: 30px;
+    }
+
+    #popup_diploma .popup_title{
+        font-size: 20px;
+    }
+
+    #popup_diploma .popup_close{
+        right: 10px;
+        top: 10px;
+        font-size: 18px;
+    }
+
+    #popup_diploma .block_image_diploma{
+        width: 280px;
+        height: 180px;
     }
 
 }
