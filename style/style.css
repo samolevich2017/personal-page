@@ -873,6 +873,8 @@ body{
 }
 
 @media (max-width: 720px){
+
+    #popup_portfolio1 .popup_content,
     #popup_diploma .popup_content{
         width: 560px;
         height: 680px;
@@ -883,10 +885,15 @@ body{
         font-size: 38px;
     }
 
+    #popup_portfolio1 .popup_close,
     #popup_diploma .popup_close{
         right: 15px;
         top: 15px;
         font-size: 25px;
+    }
+
+    #popup_portfolio1 .images-item{
+
     }
 
     #popup_diploma .block_image_diploma{
@@ -952,6 +959,46 @@ body{
         margin-right: 80px;
     }
 
+    #popup_portfolio1 .block_images{
+        height: 250px;
+    }
+}
+
+@media (max-width: 528px){
+
+    #popup_portfolio1 .block_images{
+        height: 220px;
+    }
+
+    .block_about_project::-webkit-scrollbar{
+        display: none;
+    }
+
+    .btnRight,
+    .btnLeft{
+        margin: 0;
+        padding: 8px;
+    }
+
+    #popup_portfolio1 .popup_content{
+        width: 540px;
+        height: 680px;
+        margin-top: 60px;
+    }
+
+    #popup_portfolio1 .popup_title{
+        font-size: 28px;
+    }
+
+    #popup_portfolio1 .popup_close{
+        right: 15px;
+        top: 15px;
+        font-size: 25px;
+    }
+
+    #popup_portfolio1 .images-item{
+
+    }
 }
 
 @media (max-width: 580px){
@@ -1106,6 +1153,10 @@ body{
 }
 
 @media (max-width: 425px){
+    #popup_portfolio1 .block_images{
+        height: 160px;
+    }
+
     .header .block_photo {
         right: -10px;
     }
@@ -1118,9 +1169,32 @@ body{
     .section-skills{
         padding-left: 0;
     }
+
+    #popup_portfolio1 .popup_title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #popup_portfolio1 .popup_close{
+        right:  10px;
+        top: 10px;
+        font-size: 20px;
+    }
+
+    .block_about_project h3 {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 320px){
+
+    #popup_portfolio1 .popup_title{
+        font-size: 18px;
+    }
+
+    #popup_portfolio1 .block_images{
+        height: 130px;
+    }
 
     .section-education{
         padding-bottom: 45px;
