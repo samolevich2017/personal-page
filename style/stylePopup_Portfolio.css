@@ -96,3 +96,7 @@
     justify-content: center;
     transition: all 0.8s ease;
 }
+
+.popup_port i{
+    font-weight: normal;
+}

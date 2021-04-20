@@ -1,27 +1,51 @@
 
 let popup_portfolio1 = document.getElementById("popup_portfolio1");
-
+let popup_portfolio2 = document.getElementById("popup_portfolio2");
+let popup_portfolio3 = document.getElementById("popup_portfolio3");
+let popup_portfolio4 = document.getElementById("popup_portfolio4");
+let current_popup;
+let slideIndex = 1;
 
 $(document).ready(function () {
 
     // клик по кнопке "Подробно" о первом проекте
-    $(".portfolio-detail").on('click', function () {
+    $(".portfolio-detail").on('click', function (e) {
 
-        popupOpen(popup_portfolio1);
+        // открыть окно первого проекта
+        if(e.currentTarget.classList.contains("project1")){
+            current_popup = popup_portfolio1;
+            showSlides(slideIndex = 1);
+            popupOpen(popup_portfolio1);
+        }
+
+
+        // открыть окно второго проекта
+        if(e.currentTarget.classList.contains("project2")){
+            current_popup = popup_portfolio2;
+            showSlides(slideIndex = 1);
+            popupOpen(popup_portfolio2);
+        }
+
+        // открыть окно третьего проекта
+        if(e.currentTarget.classList.contains("project3")){
+            current_popup = popup_portfolio3;
+            showSlides(slideIndex = 1);
+            popupOpen(popup_portfolio3);
+        }
+
+        // открыть окно четвертого проекта
+        if(e.currentTarget.classList.contains("project4")){
+            current_popup = popup_portfolio4;
+            showSlides(slideIndex = 1);
+            popupOpen(popup_portfolio4);
+        }
 
         // скрытие стрелок переключения, если это необходимо
         fadeArrows();
 
     });
 
-
 });
-
-
-
-/* Устанавливаем индекс слайда по умолчанию */
-let slideIndex = 1;
-showSlides(slideIndex);
 
 /* Увеличиваем индекс на 1 — показываем следующий слайд*/
 function nextSlide() {
@@ -41,7 +65,7 @@ function currentSlide(n) {
 /* Функция перелистывания */
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("images-item");
+    let slides = current_popup.getElementsByClassName("images-item");
 
     if (n > slides.length) {
         slideIndex = 1
