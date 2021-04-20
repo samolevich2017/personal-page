@@ -6,6 +6,10 @@ body{
     font-family: Helvetica;
 }
 
+.section-content p {
+    line-height: 22px;
+}
+
 .wrapper{
     height: 100%;
     background: url("../images/mountain-min.jpg") round;
@@ -271,14 +275,54 @@ body{
     padding-bottom: 30px;
 }
 
+.section-content b{
+    font-size: 15px;
+}
+
 .section-about{
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 150px;
     background:linear-gradient(150deg, transparent 17px, #FFFDFF 0) top left,
             linear-gradient(30deg, transparent 17px, #FFFDFF 0) bottom left;
     background-size: 100% 50%;
     background-repeat: no-repeat;
+}
+
+.section-about blockquote {
+    margin: 0;
+    background: white;
+    border-top: 5px solid rgb(186 202 213 / 80%);
+    border-bottom: 5px solid rgb(186 202 213 / 80%);
+    color: #3A3C55;
+    padding: 30px 30px 30px 90px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.section-about blockquote:before {
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    background: rgb(66 77 88);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 38px;
+    line-height: 1.35;
+    text-align: center;
+}
+.section-about blockquote p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    letter-spacing: .05em;
+    line-height: 1.4;
+}
+.section-about blockquote cite {
+    font-style: normal;
+    font-size: 14px;
 }
 
 .section-experience{
@@ -328,6 +372,7 @@ body{
 }
 
 .github_link,
+.portfolio-link,
 .portfolio-card a,
 .diploma-education{
     float: left;
@@ -337,6 +382,7 @@ body{
 }
 
 .github_link:after,
+.portfolio-link:after,
 .portfolio-card a:after,
 .diploma-education:after{
     content: "";
@@ -349,8 +395,14 @@ body{
     transition: width 0.2s ease-out;
 }
 
+.portfolio-link{
+    float: none;
+}
+
 .github_link:hover:after,
 .github_link:active:after,
+.portfolio-link:active:after,
+.portfolio-link:hover:after,
 .portfolio-card a:hover:after,
 .portfolio-card a:active:after,
 .diploma-education:hover:after,
@@ -428,6 +480,14 @@ body{
 }
 
 .css._active:before{
+    width: 80%;
+}
+
+.wpf._active:before{
+    width: 92%;
+}
+
+.adoef._active:before{
     width: 80%;
 }
 
@@ -857,7 +917,12 @@ body{
     }
 
     .footer-contacts ul li>a{
-        color: rgb(51, 137, 225);
+         color: rgb(51, 137, 225);
+     }
+
+    .footer-contacts ul li>a:active,
+    .footer-contacts ul li>a:hover{
+        color: rgb(106 146 237);
     }
     
     .button__container{
@@ -869,6 +934,10 @@ body{
     .btn{
         padding: 6px 14px;
         font-size: 18px;
+    }
+
+    .block_photo{
+        right: 55px;
     }
 }
 
