@@ -42,6 +42,7 @@ if(animItems.length > 0){
 let showDiploma = document.getElementById('diploma_step');
 
 showDiploma.addEventListener('click', function (e) {
+    current_popup = popupDiploma;
     popupOpen(popupDiploma);
     lazyLoadingImages();
 });
