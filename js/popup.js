@@ -89,5 +89,11 @@ document.addEventListener('keydown', function (e) {
     } // if
 });
 
-
-
+function lazyLoadingImages() {
+    current_popup.querySelectorAll("img[data-src]").forEach((item)=>{
+        if(item.hasAttribute('data-src')){
+            item.src = item.dataset.src;
+            item.removeAttribute('data-src');
+        }
+    });
+}

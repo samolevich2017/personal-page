@@ -874,6 +874,11 @@ body{
 
 @media (max-width: 990px){
 
+    .wrapper,
+    .trees{
+        background: none;
+    }
+
     .header,
     .section{
         background-color: #FFFDFF;

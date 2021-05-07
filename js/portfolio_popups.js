@@ -16,6 +16,7 @@ $(document).ready(function () {
             current_popup = popup_portfolio1;
             showSlides(slideIndex = 1);
             popupOpen(popup_portfolio1);
+            lazyLoadingImages();
         }
 
 
@@ -24,6 +25,7 @@ $(document).ready(function () {
             current_popup = popup_portfolio2;
             showSlides(slideIndex = 1);
             popupOpen(popup_portfolio2);
+            lazyLoadingImages();
         }
 
         // открыть окно третьего проекта
@@ -31,6 +33,7 @@ $(document).ready(function () {
             current_popup = popup_portfolio3;
             showSlides(slideIndex = 1);
             popupOpen(popup_portfolio3);
+            lazyLoadingImages();
         }
 
         // открыть окно четвертого проекта
@@ -38,6 +41,7 @@ $(document).ready(function () {
             current_popup = popup_portfolio4;
             showSlides(slideIndex = 1);
             popupOpen(popup_portfolio4);
+            lazyLoadingImages();
         }
 
         // скрытие стрелок переключения, если это необходимо
